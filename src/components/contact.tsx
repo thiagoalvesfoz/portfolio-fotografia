@@ -44,7 +44,7 @@ export function Contact() {
             <p className="text-sm text-muted-foreground">Ou me siga nas redes sociais</p>
             <div className="flex items-center justify-center gap-6">
               <a
-                href="https://instagram.com/juliadelima.barros"
+                href="https://instagram.com/julialima_socialmedia"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-primary transition-colors group cursor-pointer"
@@ -52,7 +52,7 @@ export function Contact() {
                 <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
                   <Instagram className="h-6 w-6" />
                 </div>
-                <span className="text-sm font-medium">@juliadelima.barros</span>
+                <span className="text-sm font-medium">@julialima_socialmedia</span>
               </a>
             </div>
           </div>
