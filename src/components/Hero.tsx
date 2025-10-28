@@ -26,7 +26,7 @@ export function Hero() {
         <div className=" grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="space-y-6 lg:space-y-8 text-shadow">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-light leading-tight tracking-tight text-balance">
-              Julia de Lima Barros
+              Júlia de Lima Barros
             </h1>
             <p className="text-base lg:text-lg text-white lg:text-muted-foreground leading-relaxed max-w-xl text-pretty">
               Ajudo pessoas e marcas a se destacarem com imagens e conteúdos que inspiram, emocionam e comunicam com autenticidade.

@@ -21,10 +21,10 @@ export function About() {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p className="text-pretty">
-               Olá, eu sou a <b>Julia</b>, e sou apaixonada por registrar momentos autênticos e carregados de emoção.
+               Olá, eu sou a <b>Júlia</b>, e sou apaixonada por registrar momentos autênticos e cheios de emoções.
               </p>
               <p className="text-pretty">
-              Trabalho como <b>fotógrafa</b> de <b>eventos</b> como <b>casamentos civil</b>, <b>aniversários</b> e <b>eventos corporativos</b>, além de <b>produções em vídeo</b> para <b>redes sociais</b>. 
+              Capturo momentos especiais em <b>casamentos civis</b>, <b>aniversários</b> e <b>eventos corporativos</b>, além de criar <b>conteúdos em vídeo</b> para <b>redes sociais</b>.
               </p>
               <p className="text-pretty">
                 Cada clique é uma oportunidade de contar histórias reais, com sensibilidade, dedicação e criatividade.

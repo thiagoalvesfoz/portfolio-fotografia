@@ -23,7 +23,7 @@ export function Header() {
             )}
         >
             <div className="container mx-auto px-4 lg:px-8">
-                <div className="flex items-center justify-between h-16 lg:h-20">
+                <div className="flex items-center justify-between h-20 lg:h-20">
                     <button
                         onClick={() => scrollToSection('hero')}
                         className="text-lg lg:text-xl font-light tracking-wide hover:opacity-70 transition-opacity cursor-pointer"

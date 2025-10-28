@@ -7,22 +7,23 @@ import { Portfolio } from '@/components/portfolio'
 import { WhatsAppButtton } from '@/components/WhatsAppButton'
 import { Metadata } from 'next'
 
+const title = 'Júlia de Lima - Fotógrafa e Social Media';
+const description = 'Ajudo pessoas e marcas a se destacarem com imagens e conteúdos que inspiram, emocionam e comunicam com autenticidade.';
+
 export const metadata: Metadata = {
-  title: 'Julia de Lima - Fotógrafa e Social Media',
-  description:
-    'Ajudo pessoas e marcas a se destacarem com imagens e conteúdos que inspiram, emocionam e comunicam com autenticidade.',
+  title,
+  description,
   openGraph: {
-    title: 'Julia de Lima - Fotógrafa e Social Media',
-    description:
-      'Ajudo pessoas e marcas a se destacarem com imagens e conteúdos que inspiram, emocionam e comunicam com autenticidade.',
+    title,
+    description,
     url: 'https://juliadelima.vercel.app/',
-    siteName: 'Julia de Lima',
+    siteName: 'Júlia de Lima',
     images: [
       {
         url: 'https://juliadelima.vercel.app/og.JPG',
         width: 1200,
         height: 630,
-        alt: 'Julia de Lima - Fotografia e Portfólio',
+        alt: title,
       },
     ],
     locale: 'pt-BR',
