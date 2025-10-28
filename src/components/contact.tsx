@@ -14,7 +14,7 @@ export function Contact() {
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <p className="text-sm tracking-widest text-muted-foreground uppercase">Contato</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light leading-tight text-balance">
-            Vamos criar algo incrível juntos
+            Vamos criar algo incrível juntos?
           </h2>
           <p className="text-muted-foreground leading-relaxed text-pretty text-lg">
             Estou sempre aberta a novos projetos e colaborações. Entre em contato pelo WhatsApp para discutirmos como
