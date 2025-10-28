@@ -34,7 +34,7 @@ export function Contact() {
                 className="bg-[#25D366] hover:bg-[#20BA5A] text-white py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
               >
                 <Image src='/whatsapp.svg' alt="WhatsApp" width={18} height={18} />
-                Fale Comigo no WhatsApp
+                Fale comigo no WhatsApp
               </Button>
             </a>
           </div>
