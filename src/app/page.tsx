@@ -8,13 +8,13 @@ import { WhatsAppButtton } from '@/components/WhatsAppButton'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Julia de Lima - Fotografia e Portfólio',
+  title: 'Julia de Lima - Fotógrafa e Social Media',
   description:
-    'Portfólio de Julia de Lima, fotógrafa especializada em retratos e fotografia artística.',
+    'Ajudo pessoas e marcas a se destacarem com imagens e conteúdos que inspiram, emocionam e comunicam com autenticidade.',
   openGraph: {
-    title: 'Julia de Lima - Fotografia e Portfólio',
+    title: 'Julia de Lima - Fotógrafa e Social Media',
     description:
-      'Portfólio de Julia de Lima, fotógrafa especializada em retratos e fotografia artística.',
+      'Ajudo pessoas e marcas a se destacarem com imagens e conteúdos que inspiram, emocionam e comunicam com autenticidade.',
     url: 'https://juliadelima.vercel.app/',
     siteName: 'Julia de Lima',
     images: [

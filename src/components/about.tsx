@@ -24,10 +24,10 @@ export function About() {
                Olá, eu sou a <b>Julia</b>, e sou apaixonada por registrar momentos autênticos e carregados de emoção.
               </p>
               <p className="text-pretty">
-              Trabalho como <b>fotógrafa</b> de <b>eventos</b> como <b>casamentos</b>, <b>aniversários</b> e <b>eventos corporativos</b>, além de <b>produções em vídeo</b> para <b>redes sociais</b>. Cada clique é uma oportunidade de contar histórias reais, com sensibilidade, dedicação e criatividade.
+              Trabalho como <b>fotógrafa</b> de <b>eventos</b> como <b>casamentos civil</b>, <b>aniversários</b> e <b>eventos corporativos</b>, além de <b>produções em vídeo</b> para <b>redes sociais</b>. 
               </p>
               <p className="text-pretty">
-                
+                Cada clique é uma oportunidade de contar histórias reais, com sensibilidade, dedicação e criatividade.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-8 pt-6">
