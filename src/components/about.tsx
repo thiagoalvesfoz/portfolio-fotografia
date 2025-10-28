@@ -1,11 +1,20 @@
-import Image from "next/image"
+'use client'
+
+import Image from "next/image";
+import { useRef } from "react";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import { cn } from "@/lib/utils";
 
 export function About() {
+  const ref = useRef<HTMLDivElement>(null);  
+  const isVisible = useIntersectionObserver(ref, { threshold: 0.2 });
+
   return (
-    <section id="about" className="py-20 lg:py-32 bg-secondary/30">
+    <section ref={ref} id="about" className={cn('py-20 lg:py-32 bg-secondary/30 overflow-hidden')}>
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div className="relative aspect-square overflow-hidden order-2 lg:order-1 rounded-3xl">
+          
+          <div className={cn("relative aspect-square overflow-hidden order-2 lg:order-1 rounded-3xl transition-all duration-500 scale-50 translate-y-20 opacity-10 ", { 'scale-100 translate-y-0 opacity-100': isVisible})}>
             <Image
               src="/foto1.JPEG"
               alt="Sobre a fotógrafa"
@@ -14,7 +23,9 @@ export function About() {
             />
           </div>
 
-          <div className="space-y-6 order-1 lg:order-2">
+          <div className={cn("space-y-6 order-1 lg:order-2 delay-150 duration-500 ease-in-out translate-x-full opacity-0", {
+            'translate-x-0 opacity-100': isVisible
+          })}>
             <p className="text-sm tracking-widest text-muted-foreground uppercase">Sobre mim</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-light leading-tight text-balance">
               Uma fotógrafa que transforma momentos em histórias.

@@ -7,6 +7,8 @@ import { Portfolio } from '@/components/portfolio'
 import { WhatsAppButtton } from '@/components/WhatsAppButton'
 import { Metadata } from 'next'
 
+export const revalidate = 0;
+
 const title = 'Júlia de Lima - Fotógrafa e Social Media';
 const description = 'Ajudo pessoas e marcas a se destacarem com imagens e conteúdos que inspiram, emocionam e comunicam com autenticidade.';
 

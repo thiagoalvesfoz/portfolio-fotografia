@@ -2,12 +2,15 @@
 
 
 import { Button } from "@/components/ui/button";
-import { getContactWhatApp } from "@/lib/utils";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import { cn, getContactWhatApp } from "@/lib/utils";
 import { Instagram } from "lucide-react";
 import Image from "next/image";
-import { useCallback } from "react";
+import { useCallback, useRef } from "react";
 
 export function Contact() {
+  const ref = useRef<HTMLDivElement>(null);  
+  const isVisible = useIntersectionObserver(ref, { threshold: 0.2 });
 
   const handleOpenInstagram = useCallback(() => {
     const username = "julialima_socialmedia";
@@ -37,9 +40,9 @@ export function Contact() {
   }, []);
 
   return (
-    <section id="contact" className="py-20 lg:py-32 bg-linear-to-br from-primary/5 via-background to-accent/5">
+    <section ref={ref} id="contact" className="py-20 lg:py-32 bg-linear-to-br from-primary/5 via-background to-accent/5">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center space-y-8">
+        <div className={cn("max-w-3xl mx-auto text-center space-y-8 transition-all duration-700 ease-in-out opacity-0", { "opacity-100": isVisible })}>
           <p className="text-sm tracking-widest text-muted-foreground uppercase">Contato</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light leading-tight text-balance">
             Vamos criar algo incrível juntos?
@@ -50,7 +53,7 @@ export function Contact() {
           </p>
 
           {/* WhatsApp button */}
-          <div className="pt-8">
+          <div className={cn("pt-8 delay-400 transition-all duration-300 ease-in translate-y-5 opacity-0", { "translate-y-0 opacity-100": isVisible })}>
             <a
               href={getContactWhatApp()}
               target="_blank"
@@ -68,7 +71,7 @@ export function Contact() {
           </div>
 
           {/* Redes sociais */}
-          <div className="pt-12 space-y-4">
+          <div className={cn("pt-12 space-y-4 delay-400 transition-all duration-300 ease-in translate-y-5 opacity-0", { "translate-y-0 opacity-100": isVisible })}>
             <p className="text-sm text-muted-foreground">Ou me siga nas redes sociais</p>
             <div className="flex items-center justify-center gap-6">
               <Button

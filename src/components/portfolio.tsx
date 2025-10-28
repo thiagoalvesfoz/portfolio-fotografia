@@ -1,4 +1,9 @@
+'use client';
+
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
+import { cn } from '@/lib/utils';
 import Image from 'next/image'
+import { useRef } from 'react';
 
 const portfolioItems = [
   {
@@ -40,10 +45,13 @@ const portfolioItems = [
 ]
 
 export function Portfolio() {
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useIntersectionObserver(ref, { threshold: 0.2 });
+
   return (
-    <section id="portfolio" className="py-20 lg:py-32">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="space-y-4 mb-12 lg:mb-16">
+    <section ref={ref} id="portfolio" className="py-20 lg:py-32 overflow-hidden">
+      <div className={cn("container mx-auto px-4 lg:px-8 ")}>
+        <div className={cn("space-y-4 mb-12 lg:mb-16 transition-all duration-800 ease-in-out opacity-0 -translate-y-10", { "translate-y-0 opacity-100": isVisible })}>
           <p className="text-sm tracking-widest text-muted-foreground uppercase">
             Portfólio
           </p>
@@ -56,7 +64,10 @@ export function Portfolio() {
           {portfolioItems.map((item) => (
             <div
               key={item.id}
-              className="group relative overflow-hidden cursor-pointer rounded-2xl aspect-4/5"
+              className={cn("group relative overflow-hidden cursor-pointer rounded-2xl aspect-4/5 transition-all delay-200 duration-300 ease-in-out opacity-0 translate-y-30", {
+                "translate-0 opacity-100": isVisible,
+                
+              })}
             >
               <Image
                 src={item.image || '/placeholder.svg'}
