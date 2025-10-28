@@ -23,7 +23,7 @@ const portfolioItems = [
     id: 4,
     title: 'Aniversário infantil',
     category: 'FOTOGRAFIA | SOCIAL MEDIA',
-    image: '/foto9.JPEG',
+    image: '/foto3.JPEG',
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ export function Portfolio() {
                 src={item.image || '/placeholder.svg'}
                 alt={item.title}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105 "
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/80 opacity-100 md:opacity-0 md:group-hover:opacity-100 via-black/20 to-transparent transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">

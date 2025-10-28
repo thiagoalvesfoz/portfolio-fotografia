@@ -11,8 +11,8 @@ export function Hero() {
       className="relative sm:bg-transparent pt-16 lg:pt-20 min-h-screen flex items-center mx-auto"
     >
       {/* Background Video Placeholder */}
-      <div className="absolute lg:hidden inset-0 -z-10  ">
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/30 to-background z-10" />
+      <div className="absolute top-0 left-0 lg:hidden inset-0 -z-10 bg-red-500 ">
+        <div className="absolute inset-0 bg-linear-to-b from-background/60 via-background/30 to-background z-10  bg-black/60" />
         <Image
           src="/julia.jpeg"
           alt="Fotografia de retrato profissional"
@@ -24,7 +24,7 @@ export function Hero() {
 
       <div className="container mx-auto px-8 lg:px-8 py-12 lg:py-20">
         <div className=" grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          <div className="space-y-6 lg:space-y-8 text-shadow-2xs">
+          <div className="space-y-6 lg:space-y-8 text-shadow">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-light leading-tight tracking-tight text-balance">
               Julia de Lima Barros
             </h1>
@@ -52,7 +52,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="hidden lg:block w-full h-full bg-black lg:relative aspect-[3/4] lg:aspect-[4/5] overflow-hidden rounded-3xl">
+          <div className="hidden lg:block w-full h-full bg-black lg:relative aspect-3/4 lg:aspect-4/5 overflow-hidden rounded-3xl">
             <Image
               src="/julia.jpeg"
               alt="Fotografia de retrato profissional"
