@@ -11,7 +11,7 @@ const portfolioItems = [
     id: 2,
     title: "Eventos artísticos",
     category: "SOCIAL MEDIA",
-    image: "/foto1.JPEG",
+    image: "/foto7.JPEG",
   },
   {
     id: 3,
@@ -29,13 +29,13 @@ const portfolioItems = [
     id: 5,
     title: "Retratos",
     category: "FOTOGRAFIA",
-    image: "/foto5.JPEG",
+    image: "/foto6.JPEG",
   },
   {
     id: 6,
     title: "Criação de conteúdo",
     category: "SOCIAL MEDIA",
-    image: "/foto1.JPEG",
+    image: "/foto8.JPEG",
   },
 ]
 

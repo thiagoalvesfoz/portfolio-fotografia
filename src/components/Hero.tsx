@@ -14,7 +14,7 @@ export function Hero() {
       <div className="absolute lg:hidden inset-0 -z-10  ">
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/30 to-background z-10" />
         <Image
-          src="/julia-foto-1.JPG"
+          src="/julia.jpeg"
           alt="Fotografia de retrato profissional"
           fill
           className="w-full h-full object-cover my-auto"
@@ -54,7 +54,7 @@ export function Hero() {
 
           <div className="hidden lg:block w-full h-full bg-black lg:relative aspect-[3/4] lg:aspect-[4/5] overflow-hidden rounded-3xl">
             <Image
-              src="/julia-foto-1.JPG"
+              src="/julia.jpeg"
               alt="Fotografia de retrato profissional"
               fill
               className="object-cover"
