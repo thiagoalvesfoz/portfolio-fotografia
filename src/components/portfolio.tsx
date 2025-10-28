@@ -23,7 +23,7 @@ const portfolioItems = [
     id: 4,
     title: 'Aniversário infantil',
     category: 'FOTOGRAFIA | SOCIAL MEDIA',
-    image: '/foto3.JPEG',
+    image: '/foto9.JPEG',
   },
   {
     id: 5,
@@ -35,7 +35,7 @@ const portfolioItems = [
     id: 6,
     title: 'Criação de conteúdo',
     category: 'SOCIAL MEDIA',
-    image: '/foto9.JPEG',
+    image: '/foto10.JPEG',
   },
 ]
 
