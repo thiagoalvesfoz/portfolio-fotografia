@@ -31,12 +31,12 @@ export function Hero() {
             <p className="text-base lg:text-lg text-white lg:text-muted-foreground leading-relaxed max-w-xl text-pretty">
               Ajudo pessoas e marcas a se destacarem com imagens e conteúdos que inspiram, emocionam e comunicam com autenticidade.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 ">
               <a
                 href={getContactWhatApp()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-sm tracking-wider rounded-full cursor-pointer"
+                className="px-8 py-3 bg-primary text-center text-primary-foreground hover:bg-primary/90 transition-colors text-sm tracking-wider rounded-full cursor-pointer"
               >
                 Entrar em contato
               </a>
