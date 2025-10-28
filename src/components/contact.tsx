@@ -9,7 +9,7 @@ import Image from "next/image";
 export function Contact() {
 
   return (
-    <section id="contact" className="py-20 lg:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+    <section id="contact" className="py-20 lg:py-32 bg-linear-to-br from-primary/5 via-background to-accent/5">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <p className="text-sm tracking-widest text-muted-foreground uppercase">Contato</p>
