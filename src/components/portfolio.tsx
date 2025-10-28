@@ -56,7 +56,7 @@ export function Portfolio() {
           {portfolioItems.map((item) => (
             <div
               key={item.id}
-              className="group relative overflow-hidden cursor-pointer rounded-2xl aspect-[4/5]"
+              className="group relative overflow-hidden cursor-pointer rounded-2xl aspect-4/5"
             >
               <Image
                 src={item.image || '/placeholder.svg'}
@@ -64,7 +64,7 @@ export function Portfolio() {
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105 "
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 opacity-100 md:opacity-0 md:group-hover:opacity-100 via-black/20 to-transparent transition-opacity duration-300">
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 opacity-100 md:opacity-0 md:group-hover:opacity-100 via-black/20 to-transparent transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <p className="text-xs tracking-widest uppercase mb-2 opacity-80">
                     {item.category}
