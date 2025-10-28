@@ -11,7 +11,7 @@ export function Hero() {
       className="relative sm:bg-transparent pt-16 lg:pt-20 min-h-screen flex items-center mx-auto"
     >
       {/* Background Video Placeholder */}
-      <div className="absolute top-0 left-0 lg:hidden inset-0 -z-10 bg-red-500 ">
+      <div className="absolute top-0 left-0 lg:hidden inset-0 -z-10">
         <div className="absolute inset-0 bg-linear-to-b from-background/60 via-background/30 to-background z-10  bg-black/60" />
         <Image
           src="/julia.jpeg"
