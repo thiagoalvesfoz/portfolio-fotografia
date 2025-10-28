@@ -29,7 +29,7 @@ const portfolioItems = [
     id: 5,
     title: "Retratos",
     category: "FOTOGRAFIA",
-    image: "/foto1.JPEG",
+    image: "/foto5.JPEG",
   },
   {
     id: 6,
